@@ -1,0 +1,13 @@
+--Colores Hexadecimales--
+Azul Rey Intenso #0000FF
+Blanco Fantasma #F4F4F4
+Blanco Grisáceo #E7EBDA
+Plateado #c0c0c0 
+Negro Intenso #0A0A0A
+Verde Whatsapp #00BB2D
+Azul Facebook #3B5998
+
+
+--Titulos--
+  Russo One Serif font-family: 'Russo One', sans-serif;
+  Noto Serif 'Noto Serif', serif;

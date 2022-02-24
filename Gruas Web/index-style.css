@@ -1,0 +1,442 @@
+/*Importaciones*/
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balthazar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+/*Globales*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header{
+  height: 80vh;
+  width: 100vw;
+  background-image: url(./images/img--lamborghini.jpg);
+  background-color: rgb(25, 25, 25);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 1.2%;
+}
+
+a{
+  text-decoration: none;
+  color: #F4F4F4;
+}
+
+footer{
+  background-color: #0A0A0A;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  width: 100vw;
+  padding-bottom: 3%;
+}
+
+/*Contenedores*/
+.contenedor-principal{
+  height: 15vh;
+  width: 100vw;
+  background-color: #0000ff7e;
+  background-size: cover;
+}
+
+.contenedor-menu{
+  position: absolute;
+  top: 3%;
+  left: 36%;
+}
+
+.contenedor-menu button:hover{
+  -webkit-animation: ani .7s steps(22) forwards;
+  animation: ani .7s steps(22) forwards
+}
+
+.contenedor-swiper{
+  background: linear-gradient(45deg, #0A0A0A, #0000FF, #0A0A0A);
+  height: auto;
+  width: 100vw;
+}
+
+.contenedor-calidad{
+  background-image: url(./images/img--coronete.jpg);
+  background-color: rgb(25, 25, 25);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  width: 100vw;
+  margin-bottom: 3%;
+}
+
+.contenedor-servicios{
+  background: linear-gradient(45deg, #0A0A0A, #01014e, #0A0A0A);
+  height: 30vh;
+  width: 100vw;
+  margin-bottom: 3%;
+}
+
+.contenedor-ubicacion{
+  background-color: #020269;
+  height: 80vh;
+  width: 100vw;
+  margin-bottom: 3%;
+}
+
+/*Contenidos*/
+.contenido-menu{
+  border-radius: 15%;
+  position: relative;
+  height: auto;
+  width: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6vh;
+  overflow: hidden;
+  border: 1px solid;
+  font-family: Lato,sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  transition: .5s;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+.contenido-menu button{
+  width: 101%;
+  height: 100%;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 1px;
+  background: #0A0A0A;
+  -webkit-mask: url(https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png);
+  mask:url(https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png);
+  -webkit-mask-size: 2300% 100%;
+  mask-size: 2300% 100%;
+  border: none;
+  color: #F4F4F4;
+  cursor: pointer;
+  -webkit-animation: ani2 .7s steps(22) forwards;
+  animation: ani2 .7s steps(22) forwards;
+}
+
+.contenido-menu:hover{
+  background-color: #7070fc;
+}
+
+.contenido-ubicacion{
+  height: 60vh;
+  width: 60vw;
+  position: absolute;
+  top: 283%;
+  left: 20%;
+}
+
+/*Titulos*/
+.titulo-cabecera{
+  text-align:center;
+  color: #F4F4F4;
+  font-family: 'Russo One', sans-serif;
+  -webkit-text-stroke: 2px #0A0A0A;
+  color: #0000FF; 
+  font-size: 40px;
+  font-weight: bolder;
+  position: absolute;
+  top: 1%;
+  right: 39.2%;
+}
+
+.titulo-principal{
+  font-family: 'Russo One', sans-serif;
+  font-size: 50px;
+  -webkit-text-stroke: 2px #ffffff;
+  color: #0000FF;
+  text-align: center;
+  position: absolute;
+  bottom: 29%;
+  right: 34%;
+}
+
+.titulo-calidad{
+  font-family: 'Russo One', sans-serif;
+  font-size: 50px;
+  -webkit-text-stroke: 2px #ffffff;
+  color: #0000FF;
+  text-align: center;
+  position: absolute;
+  left: 10%;
+  top: 160%;
+}
+
+.titulo-servicios{
+  font-family: 'Russo One', sans-serif;
+  font-size: 50px;
+  -webkit-text-stroke: 2px #ffffff;
+  color: #0000FF;
+  text-align: center;
+  position: absolute;
+  left: 41%;
+  top: 233%;
+}
+
+.titulo-ubicacion{
+  font-family: 'Russo One', sans-serif;
+  font-size: 50px;
+  -webkit-text-stroke: 2px #ffffff;
+  color: #0000FF;
+  text-align: center;
+  position: absolute;
+  left: 41%;
+  top: 271%;
+}
+
+.titulo-pie{
+  font-family: 'Russo One', sans-serif;
+  font-size: 30px;
+  -webkit-text-stroke: 2px #ffffff;
+  color: #0000FF;
+  text-align: center;
+  position: absolute;
+  left: 42.5%;
+  top: 361%;
+}
+
+/*Textos*/
+.texto-menu{
+  color: #1C1C1C;
+  text-align: center;
+  width: 101%;
+  font-family: 'Balthazar', serif;
+  font-weight: 300;
+  position:absolute;
+  bottom: -60%;
+  font-size: 20px;
+  margin: 15px auto;
+  overflow: hidden
+}
+
+.texto-principal{
+  font-family: 'Noto Serif', serif;
+  color: #f8f8ff;
+  text-align: center;
+  position: absolute;
+  bottom: 15%;
+  right: 19%;
+}
+
+.texto-calidad{
+  font-family: 'Noto Serif', serif;
+  color: #f8f8ff;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+
+.texto-pie{
+  font-family: 'Noto Serif', serif;
+  font-size: 12px;
+  color: #f8f8ff;
+  text-align: center;
+}
+
+/*Botones*/
+.boton-facebook{
+  color: #3B5998;
+  font-size: 26px;
+  position: absolute;
+  bottom: 8.2%;
+  right: 51%;
+}
+
+.boton-whatsapp{
+  color: #00BB2D;
+  font-size: 26px;
+  position: absolute;
+  bottom: 8.2%;
+  right: 48%;
+}
+
+/*Keys*/
+@-webkit-keyframes ani{
+  from{
+    -webkit-mask-position:0 0;
+    mask-position:0 0
+  }
+to{
+  -webkit-mask-position:100% 0;
+  mask-position:100% 0
+}}
+@keyframes ani{
+  from{
+    -webkit-mask-position:0 0;
+    mask-position:0 0
+  }
+to{
+  -webkit-mask-position:100% 0;
+  mask-position:100% 0}
+}
+@-webkit-keyframes ani2{
+  from
+  {
+    -webkit-mask-position:100% 0;
+    mask-position:100% 0
+  }
+to{
+  -webkit-mask-position:0 0;
+  mask-position:0 0
+}}
+
+@keyframes ani2{
+  from{
+    -webkit-mask-position:100% 0;
+    mask-position:100% 0
+  }
+to{
+  -webkit-mask-position:0 0;
+  mask-position:0 0
+}}
+
+/*Carrusel*/
+.swiper {
+  width: 90%;
+  height: 100%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
+
+  /*Recuadros*/
+  .recuadro-calidad{
+    height: 70vh;
+    width: 45vw;
+    background-color: #0000ff2c;
+    position: absolute;
+    left: 6.2%;
+  }
+
+  .lista-servicios-izq{
+    font-family: 'Noto Serif', serif;
+    color: #f8f8ff;
+    text-align: left;
+    position: absolute;
+    top: 245%;
+    right: 55%;
+  }
+
+  .lista-servicios-der{
+    font-family: 'Noto Serif', serif;
+    color: #f8f8ff;
+    text-align: left;
+    position: absolute;
+    top: 245%;
+    left: 55%;
+  }
+
+  /*Dispositivos Moviles*/
+@media screen and (max-width: 500px){
+  /*Global*/
+  body{
+    width: 80vw;
+  }
+
+  header{
+    height: 30vh;
+    width: 100vw;
+    background-size: cover;
+  }
+
+  /*Contenedores*/
+  .contenedor-principal{
+    height: 12vh;
+    width: 100vw;
+  }
+
+  .contenedor-menu{
+    width: 100vw;
+    margin: 1%;
+    position: absolute;
+    left: 18%;
+    top: -0.5%;
+  }
+
+  .contenedor-cabecera{
+    width: 100vw;
+  }
+
+  .contenedor-calidad{
+    display: none;
+  }
+
+  /*Contenidos*/
+  .contenido-menu{
+    width: 15%;
+  }
+
+  /*Titulos*/
+  .titulo-cabecera{
+    font-size: 30px;
+    position: relative;
+    left: -1%;
+  }
+
+  .titulo-principal{
+    font-size: 25px;
+    position: absolute;
+    top: 30%;
+    right: 25%;
+  }
+
+  /*Textos*/
+  .texto-principal{
+    display: none;
+  }
+
+  /*Botones*/
+  .boton-facebook{
+    position: absolute;
+    top: 35%;
+    left: 40%;
+  }
+
+  .boton-whatsapp{
+    position: absolute;
+    top: 35%;
+    left: 52%;
+  }
+}
